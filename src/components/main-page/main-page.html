@@ -1,65 +1,96 @@
-<div className="main-container">
+<div className="main-page-container">
 
-    <div className="header">
-        <div className="brand">
-            <h3>ArenalSoft</h3>
-        </div>
-        <nav class="menu">
+  <div className="header">
+<p></p>
+      <div>
+        <p>The median for that month was </p>
+      </div>
+      <nav class="menu">
+          <ol>
+              <li class="menu-item"><a href="#0">Home</a></li>
+              <li class="menu-item"><a href="#0">About us</a></li>
+              <li class="menu-item">
+                  <a href="#0">Crypto</a>
+              </li>
+              <li class="menu-item">
+                  <a href="#0">ArenalSoft</a>
+
+              </li>
+              <li class="menu-item"><a href="#0">Contact</a></li>
+          </ol>
+      </nav>
+  </div>
+
+  <div className="main-top-content">
+      <div>
+          <h1 className="main-title">Hi Juanito! <br />Check your monthly stats</h1>
+
+          <div className="buttons">
+              <div>
+                  <button>Change month</button>
+              </div>
+              <div>
+                  <button>Average stats</button>
+              </div>
+          </div>
+
+      </div>
+  </div>
+
+  <div className="main-content">
+      <h2 className="month">September</h2>
+      <div>
+          <label>Date</label>
+          <input type="date" 
+              value="2018-07-22"
+              min="2018-01-01" max="2018-12-31" name="date" />
+          <label type="number" min="0.00" max="10000.00" step="0.01" >Price</label>
+          <input type="text" name="price" />
+          <label>Currency</label>
+          <select name="coin-type">
+          </select>
+          <button className="submit" type="submit">Enter</button>
+      </div>
+      <div className="learning-container">
+        <div>
+          <h1 className="learning-title">Learning Center</h1>
+          <h2 className="learning-subtitle">Juanito, find more resources here!</h2>
+          <nav className="learning-menu">
             <ol>
-              <li class="menu-item"><a href="#0">Hogar</a></li>
-              <li class="menu-item"><a href="#0">Acerca de</a></li>
-              <li class="menu-item">
-                <a href="#0">Crypto</a>
-                <ol class="sub-menu">
-                  <li class="menu-item"><a href="#0">Bitcoin</a></li>
-                  <li class="menu-item"><a href="#0">Ethereum</a></li>
-                </ol>
-              </li>
-              <li class="menu-item">
-                <a href="#0">ArenalSoft</a>
-                <ol class="sub-menu">
-                  <li class="menu-item"><a href="#0">México</a></li>
-                  <li class="menu-item"><a href="#0">Costa Rica</a></li>
-                </ol>
-              </li>
-              <li class="menu-item"><a href="#0">Contacto</a></li>
+                <li class="menu-item"><a href="https://ethereum.org/en/">Ethereum</a></li>
+                <li class="menu-item"><a href="https://www.investopedia.com/terms/b/bitcoin.asp">Bitcoin</a></li>
+                <li class="menu-item"><a href="https://www.investopedia.com/terms/b/blockchain.asp">Learn more</a></li>
             </ol>
-          </nav>
-    </div>
-
-    <div className="top-content">
-        <div>
-            <h1>Hola Juanito! <br /> Checa tu actividad mensual</h1>
-
-            <div className="buttons">
-                <div>
-                    <button>Cambiar el mes</button>
-                </div>
-                <div>
-                    <button>Menú principal</button>
-                </div>
-            </div>
-
+        </nav>
         </div>
-    </div>
-
-    <div nameClass="main-content">
-        <div>
-            <h2>Mes de Septiembre</h2>
-            <label>Fecha</label>
-            <input type="text" name="date">
-            <label>Precio</label>
-            <input type="text" name="price">
-            <label>Currency</label>
-            <select name="coin-type">
-            </select>
-            <button type="submit">Entrar</button>
-        </div>
-    </div>
+      </div>
+  </div>
 
 
-    <div nameClass="footer">
-        <div></div>
-    </div>
+
+
+  <div nameClass="footer">
+      <div></div>
+  </div>
 
 </div>
+
+
+<label>Date</label>
+<select id="date-dropdown" name="date">
+  {data && data.map(({ date, median }) => (
+    <option value="month">10/1/2022</option>
+    <option value="month">10/2/2022</option>
+    <option value="month">10/3/2022</option>
+    <option value="month">10/4/2022</option>
+    <option value="month">10/5/2022</option>
+    <option value="month">10/6/2022</option>
+    <option value="month">10/7/2022</option>
+    <option value="month">10/8/2022</option>
+    <option value="month">10/9/2022</option>
+    <option value="month">10/10/2022</option>
+
+
+      ) )}
+</select>
+<h2></h2>
