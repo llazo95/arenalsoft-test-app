@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;600&display=swap');
+
+.main-container{
+    background-color: #DBF052;
+    border-radius: 20px;
+    float: right;
+    color: black;
+    width: 30%;
+    height: 1500px;
+    font-size: x-large;
+    margin-right: 20px;
+}
+
+.top-container{
+    text-align: center;
+    font-size: medium;
+    margin: 25px;
+}
+
+.title{
+    font-family: "Gameplay";
+    font-size: 30px;
+}
+.change-rate-container{
+    margin-top: 50px;
+    font-family: "Gameplay";
+    font-size: 15px;
+    text-align: center;
+}
+
+p{
+    font-family: 'Ruda', sans-serif;
+    font-size: 20px;
+}
+.user-icon{
+    width: 200px;
+}
+
+.stats-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "sales purchase"
+    "price fear";
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+.purchase p{
+    grid-area: purchase;
+    margin-left: 40px;
+}
+.sales p{
+    grid-area: sales;
+    margin-left: 60px;
+
+}
+.price p{
+    grid-area: price;
+    margin-left: 10px;
+
+}
+.fear-greed p{
+    grid-area: fear;
+    margin-left: 10px;
+
+}
+.sales-img, .purchase-img, .price-img, .feargreed-img{
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 0px;
+    width: 15%;
+}
+
+.change-rate-img{
+    width: 80%;
+}
+.numbers{
+    font-family: "Gameplay";
+    margin-left: 60px;
+    margin-top: 5px;
+}

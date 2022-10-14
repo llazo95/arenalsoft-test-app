@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: "LOVES";
+  src: local("LOVES"),
+   url("./assets/fonts/p/LOVES.ttf");
+  font-family: "Gameplay";
+  src: local("Gameplay"),
+   url("./assets/fonts/h1/Gameplay.ttf");
+}
