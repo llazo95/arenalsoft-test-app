@@ -24,20 +24,20 @@ class SideBar extends Component{
 <div className="stats-container">
     <div className="sales">
         <img className="sales-img" alt="" src={Sales} />
-        <h2 className="numbers">648</h2>
-        <p>Ventas</p>
+        <h2 className="numbers">64</h2>
+        <p>Sales</p>
     </div>
 
     <div className="purchase">  
         <img className="purchase-img" alt="" src={Purchase} />
         <h2 className="numbers">68</h2>
-        <p>Compras</p>
+        <p>Purchase</p>
     </div>
 
     <div className="price">
         <img className="price-img" alt="" src={Price} />
         <h2 className="numbers">56</h2>
-        <p>Precio actual</p>
+        <p>Price</p>
     </div>
 
     <div className="fear-greed">
@@ -48,7 +48,7 @@ class SideBar extends Component{
 </div>
 
 <div className="change-rate-container">
-    <h3>Estos son tus estadisticas de la semana</h3>
+    <h3>These are your week's stats</h3>
     <img className="change-rate-img" alt="" src={ChangeRate} />
 </div>
 </div>

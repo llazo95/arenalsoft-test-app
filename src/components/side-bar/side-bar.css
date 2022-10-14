@@ -58,7 +58,7 @@ p{
 }
 .price p{
     grid-area: price;
-    margin-left: 10px;
+    margin-left: 60px;
 
 }
 .fear-greed p{
