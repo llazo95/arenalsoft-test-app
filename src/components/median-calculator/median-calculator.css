@@ -1,0 +1,51 @@
+.median-main-content {
+    display: flex;
+}
+
+.median-header,
+.median-title,
+.median-today,
+.fng-today,
+.instructions {
+    color: white;
+    font-family: 'Ruda', sans-serif;
+    margin-left: 5%;
+    margin-right: 10%;
+    font-size: 20px;
+}
+
+.results-container {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 500px;
+}
+
+.buy,
+.sell {
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 300px;
+    width: 200px;
+    margin: 30px;
+    padding: 20px;
+}
+
+.button-buy,
+.button-sell {
+    margin-top: 80px;
+}
+
+.buy p,
+.sell p {
+    color: white;
+    text-align: center;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.fng {
+    margin-top: 1px;
+}
+
+.guide{
+    margin-left: 5%;
+}
