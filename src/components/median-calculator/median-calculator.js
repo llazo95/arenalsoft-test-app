@@ -26,7 +26,7 @@ export default function MedianCalculator() {
 
   let lastPrice = price.last_trade_price;
   let todayPrice = price.price_24h;
-  let fng = fear.data.map(data => {
+  let fng = fear.data?.map(data => {
     return data.value
   })
 

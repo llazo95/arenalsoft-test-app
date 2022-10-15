@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./side-bar.css"
 import Sales from "../../assets/img/sales.svg";
 import Price from "../../assets/img/price.svg";
@@ -10,8 +10,8 @@ import ChangeRate from "../../assets/img/changeRate.gif";
 
 
 
-class SideBar extends Component {
-    render() {
+export default function SideBar() {
+
         return (
 
             <div className="main-container">
@@ -54,6 +54,5 @@ class SideBar extends Component {
             </div>
         );
     }
-}
 
-export default SideBar
+
