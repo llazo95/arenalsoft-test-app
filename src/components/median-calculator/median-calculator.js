@@ -39,7 +39,14 @@ export default function MedianCalculator() {
           <h2 className="median-title">&#x1F60E; The median last month was: <br /> {lastPrice}</h2>
           <h2 className="median-today">&#x1F916;	 The median today is <br /> {todayPrice}</h2>
           <h2 className="fng-today">&#x1F916;	 The Fear and Greed index today is {fng}</h2>
+          <div className="guide">
+          {todayPrice < lastPrice && fng < 20 ? <h2>According to your settings you should buy bitcoin</h2> 
+          : todayPrice > lastPrice && fng > 80 ? <h2>According to your settings you should sell bitcoin</h2> 
+          : <button>Click here to receive an email with hodl information</button>
+          }
         </div>
+        </div>
+        
         <div>
           <div className="results-container">
             <div className="buy">
@@ -55,13 +62,6 @@ export default function MedianCalculator() {
           </div>
         </div>
       </div>
-      <div className="guide">
-          {todayPrice < lastPrice && fng < 20 ? <h2>According to your settings you should buy bitcoin</h2> 
-          : todayPrice > lastPrice && fng > 80 ? <h2>According to your settings you should sell bitcoin</h2> 
-          : <button>Click here to receive an email with hodl information</button>
-          }
-        </div>
-
     </div>
   )
 }
