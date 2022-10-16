@@ -33,9 +33,7 @@ export default function MainPage() {
         <div className="main-page-container">
 
             <div className="header">
-                <div className="brand">
-                    <h3>ArenalSoft</h3>
-                </div>
+
                 <nav className="menu">
                     <ol>
                         <li className="menu-item"><a href="#0">Home</a></li>
